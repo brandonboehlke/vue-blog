@@ -27,6 +27,7 @@ export default {
             blogService.addBlog(this.blogTitle, this.blogContent)
             this.blogTitle = ''
             this.blogContent = ''
+            this.$parent.updateData()
         }
     }
 }

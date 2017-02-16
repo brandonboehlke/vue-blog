@@ -19,6 +19,9 @@ let blogService = {
             content: blogContent,
             comments: []
         }
+    },
+    recycleBlog(blogTitle) {
+        delete blogs[blogTitle]
     }
 }
 

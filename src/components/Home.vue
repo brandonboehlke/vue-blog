@@ -14,9 +14,16 @@
     export default {
         name: 'home',
         components: { NewBlog, JumboTron, BlogList },
-        // data() {
-
-        // }
+        data() {
+          return {
+              lastUpdate: Date.now()
+          }  
+        },
+        methods: {
+            updateData() {
+                this.lastUpdate = Date.now()
+            }
+        }
 
 
     }

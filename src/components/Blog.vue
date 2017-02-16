@@ -2,6 +2,7 @@
   <div>
     <h3>{{ blog.title }}</h3>
     <p> {{ blog.content }} </p>
+    <router-link to="/">Home</router-link>
   </div>
 </template>
 
